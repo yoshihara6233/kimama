@@ -72,7 +72,7 @@ export function Footer() {
                     {h.lunch && (
                       <span className="mr-2">昼 {h.lunch}</span>
                     )}
-                    <span>夜 {h.dinner}</span>
+                    {h.dinner && <span>夜 {h.dinner}</span>}
                   </div>
                 ))}
                 <div className="text-white/50 text-xs mt-1">

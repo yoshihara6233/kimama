@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { motion } from "framer-motion";
 import { MapPin, Train, Car, Clock, Phone } from "lucide-react";
 import { RESTAURANT } from "@/lib/constants";
 
@@ -120,10 +119,12 @@ export default function AccessPage() {
                           {h.lunch}
                         </span>
                       )}
-                      <span className="block mt-0.5">
-                        <span className="text-xs text-[var(--muted-foreground)] mr-2">ディナー</span>
-                        {h.dinner}
-                      </span>
+                      {h.dinner && (
+                        <span className="block mt-0.5">
+                          <span className="text-xs text-[var(--muted-foreground)] mr-2">ディナー</span>
+                          {h.dinner}
+                        </span>
+                      )}
                     </span>
                   </div>
                 ))}

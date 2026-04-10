@@ -57,7 +57,7 @@ export default function ReservationPage() {
                   {RESTAURANT.hours.map((h) => (
                     <p key={h.day}>
                       <span className="mr-2">{h.day}</span>
-                      {h.lunch && `${h.lunch} /`} {h.dinner}
+                      {h.lunch && `昼 ${h.lunch}`}{h.lunch && h.dinner && " / "}{h.dinner && `夜 ${h.dinner}`}
                     </p>
                   ))}
                 </div>

@@ -93,7 +93,7 @@ export function AccessSection() {
                   <div key={h.day} className="text-sm mb-1">
                     <span className="text-white/50 text-xs mr-3">{h.day}</span>
                     <span className="text-white/90">
-                      {h.lunch && `昼 ${h.lunch}　`}夜 {h.dinner}
+                      {h.lunch && `昼 ${h.lunch}`}{h.lunch && h.dinner && "　"}{h.dinner && `夜 ${h.dinner}`}
                     </span>
                   </div>
                 ))}
