@@ -29,40 +29,52 @@ export default function NewsPage() {
 
       <div className="bg-[var(--background)] min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="space-y-10">
-            {newsItems.map((item) => (
-              <article
-                key={item.id}
-                id={item.id}
-                className="pb-10 border-b border-[var(--border)] last:border-0 last:pb-0 scroll-mt-28"
-              >
-                {/* メタ情報 */}
-                <div className="flex items-center gap-3 mb-3">
-                  <time
-                    dateTime={item.date}
-                    className="text-xs text-[var(--muted-foreground)] tracking-wide"
-                  >
-                    {item.date.replace(/-/g, ".")}
-                  </time>
-                  <span
-                    className={`text-[10px] px-2.5 py-1 rounded-full font-medium tracking-wide ${tagColors[item.tag]}`}
-                  >
-                    {item.tag}
-                  </span>
-                </div>
-
-                {/* タイトル */}
-                <h2 className="font-serif text-xl font-bold text-[var(--foreground)] leading-snug mb-3 tracking-wide">
-                  {item.title}
-                </h2>
-
-                {/* 本文 */}
-                <p className="text-sm text-[var(--muted-foreground)] leading-relaxed">
-                  {item.body}
-                </p>
-              </article>
-            ))}
-          </div>
+          {newsItems.length === 0 ? (
+            <div className="text-center py-20 text-[var(--muted-foreground)]">
+              <p className="font-serif text-lg mb-2">現在お知らせはありません</p>
+              <p className="text-sm">最新情報は
+                <a
+                  href="https://www.instagram.com/kimama2025.10/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--primary)] hover:text-[var(--accent)] transition-colors mx-1"
+                >
+                  Instagram
+                </a>
+                でもご確認いただけます。
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-10">
+              {newsItems.map((item) => (
+                <article
+                  key={item.id}
+                  id={item.id}
+                  className="pb-10 border-b border-[var(--border)] last:border-0 last:pb-0 scroll-mt-28"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <time
+                      dateTime={item.date}
+                      className="text-xs text-[var(--muted-foreground)] tracking-wide"
+                    >
+                      {item.date.replace(/-/g, ".")}
+                    </time>
+                    <span
+                      className={`text-[10px] px-2.5 py-1 rounded-full font-medium tracking-wide ${tagColors[item.tag]}`}
+                    >
+                      {item.tag}
+                    </span>
+                  </div>
+                  <h2 className="font-serif text-xl font-bold text-[var(--foreground)] leading-snug mb-3 tracking-wide">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm text-[var(--muted-foreground)] leading-relaxed">
+                    {item.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>
