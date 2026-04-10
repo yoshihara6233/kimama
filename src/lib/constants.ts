@@ -29,7 +29,7 @@ export const RESTAURANT = {
     parking: "近隣にコインパーキングあり",
   },
   sns: {
-    instagram: "https://instagram.com/",
+    instagram: "https://www.instagram.com/kimama2025.10/",
     twitter: "https://twitter.com/",
   },
 } as const;
