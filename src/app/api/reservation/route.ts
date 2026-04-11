@@ -42,13 +42,16 @@ export async function POST(req: NextRequest) {
   const resendKey = process.env.RESEND_API_KEY;
   const ownerEmail = process.env.RESERVATION_EMAIL ?? "owner@example.com";
 
-  if (resendKey) {
-    try {
-      const { Resend } = await import("resend");
-      const resend = new Resend(resendKey);
+  if (!resendKey) {
+    return NextResponse.json({ ok: true, debug: "RESEND_API_KEY not set" });
+  }
 
-      const subject = `【きまま】ご予約 ${data.date} ${timeLabel} ${data.name}様 ${data.guests}名`;
-      const text = `
+  try {
+    const { Resend } = await import("resend");
+    const resend = new Resend(resendKey);
+
+    const subject = `【きまま】ご予約 ${data.date} ${timeLabel} ${data.name}様 ${data.guests}名`;
+    const text = `
 新しいご予約が届きました。
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -59,22 +62,22 @@ export async function POST(req: NextRequest) {
 メールアドレス：${data.email}
 ${data.notes ? `ご要望：${data.notes}` : ""}
 ━━━━━━━━━━━━━━━━━━━━
-      `.trim();
+    `.trim();
 
-      // オーナーへ通知
-      await resend.emails.send({
-        from: "onboarding@resend.dev",
-        to: ownerEmail,
-        subject,
-        text,
-      });
+    // オーナーへ通知
+    const ownerResult = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: ownerEmail,
+      subject,
+      text,
+    });
 
-      // お客様へ確認メール
-      await resend.emails.send({
-        from: "onboarding@resend.dev",
-        to: data.email,
-        subject: `【きまま】ご予約を受け付けました`,
-        text: `
+    // お客様へ確認メール
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: data.email,
+      subject: `【きまま】ご予約を受け付けました`,
+      text: `
 ${data.name} 様
 
 この度はきままへのご予約ありがとうございます。
@@ -91,13 +94,13 @@ ${data.notes ? `ご要望：${data.notes}` : ""}
 
 きまま
 TEL: 072-236-6461
-        `.trim(),
-      });
-    } catch (err) {
-      console.error("Email send failed:", err);
-      // メール失敗は予約自体の失敗とはしない（ログのみ）
-    }
-  }
+      `.trim(),
+    });
 
-  return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, emailId: ownerResult.data?.id ?? null });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Email send failed:", msg);
+    return NextResponse.json({ ok: true, emailError: msg });
+  }
 }
