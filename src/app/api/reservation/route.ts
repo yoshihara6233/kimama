@@ -43,7 +43,8 @@ export async function POST(req: NextRequest) {
   const ownerEmail = process.env.RESERVATION_EMAIL ?? "owner@example.com";
 
   if (!resendKey) {
-    return NextResponse.json({ ok: true, debug: "RESEND_API_KEY not set" });
+    console.error("RESEND_API_KEY is not set");
+    return NextResponse.json({ ok: true });
   }
 
   try {
@@ -65,7 +66,7 @@ ${data.notes ? `ご要望：${data.notes}` : ""}
     `.trim();
 
     // オーナーへ通知
-    const ownerResult = await resend.emails.send({
+    await resend.emails.send({
       from: "onboarding@resend.dev",
       to: ownerEmail,
       subject,
@@ -97,7 +98,7 @@ TEL: 072-236-6461
       `.trim(),
     });
 
-    return NextResponse.json({ ok: true, emailId: ownerResult.data?.id ?? null });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     console.error("Email send failed:", msg);
