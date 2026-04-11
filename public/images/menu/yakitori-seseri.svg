@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+    <linearGradient id="skewer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="50%" style="stop-color:#c8a850"/>
+      <stop offset="100%" style="stop-color:#a07830"/>
+    </linearGradient>
+    <linearGradient id="seseri" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d07030"/>
+      <stop offset="40%" style="stop-color:#a04818"/>
+      <stop offset="100%" style="stop-color:#6a2808"/>
+    </linearGradient>
+    <linearGradient id="seseriShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e09040;stop-opacity:0.55"/>
+      <stop offset="100%" style="stop-color:#c06820;stop-opacity:0.15"/>
+    </linearGradient>
+    <linearGradient id="tare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1000;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#050200;stop-opacity:0.4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#e07030;stop-opacity:0.28"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="280" rx="180" ry="60" fill="#c84000" opacity="0.1" filter="url(#blur1)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+
+  <!-- 皿 -->
+  <ellipse cx="200" cy="238" rx="152" ry="28" fill="#2a1a0a" stroke="#3a2510" stroke-width="2"/>
+  <ellipse cx="200" cy="235" rx="147" ry="22" fill="#221408"/>
+
+  <!-- おすすめバッジ風の炎エフェクト -->
+  <text x="298" y="98" font-family="serif" font-size="22" fill="#e87020" opacity="0.7">🔥</text>
+
+  <!-- 串1 -->
+  <rect x="78" y="100" width="6" height="155" rx="3" fill="url(#skewer)" transform="rotate(-35 155 200)"/>
+  <g transform="rotate(-35 155 200)">
+    <!-- せせり（首肉らしい柔らかな不規則形） -->
+    <path d="M62 126 Q68 118 79 120 Q90 118 95 127 Q100 136 92 146 Q85 153 78 152 Q71 153 65 146 Q59 137 62 126Z" fill="url(#seseri)"/>
+    <path d="M62 126 Q68 118 79 120 Q90 118 95 127 Q100 136 92 146 Q85 153 78 152 Q71 153 65 146 Q59 137 62 126Z" fill="url(#tare)"/>
+    <path d="M62 126 Q68 118 79 120 Q90 118 95 127 Q100 136 92 146 Q85 153 78 152 Q71 153 65 146 Q59 137 62 126Z" fill="url(#seseriShine)"/>
+    <line x1="63" y1="134" x2="95" y2="131" stroke="#3a1400" stroke-width="1.5" opacity="0.45"/>
+    <line x1="62" y1="142" x2="96" y2="139" stroke="#3a1400" stroke-width="1.5" opacity="0.45"/>
+
+    <path d="M62 162 Q68 154 79 156 Q90 154 95 163 Q100 172 92 182 Q85 189 78 188 Q71 189 65 182 Q59 173 62 162Z" fill="url(#seseri)"/>
+    <path d="M62 162 Q68 154 79 156 Q90 154 95 163 Q100 172 92 182 Q85 189 78 188 Q71 189 65 182 Q59 173 62 162Z" fill="url(#tare)"/>
+    <path d="M62 162 Q68 154 79 156 Q90 154 95 163 Q100 172 92 182 Q85 189 78 188 Q71 189 65 182 Q59 173 62 162Z" fill="url(#seseriShine)"/>
+    <line x1="63" y1="170" x2="95" y2="167" stroke="#3a1400" stroke-width="1.5" opacity="0.45"/>
+
+    <path d="M62 198 Q68 190 79 192 Q90 190 95 199 Q100 208 92 218 Q85 225 78 224 Q71 225 65 218 Q59 209 62 198Z" fill="url(#seseri)"/>
+    <path d="M62 198 Q68 190 79 192 Q90 190 95 199 Q100 208 92 218 Q85 225 78 224 Q71 225 65 218 Q59 209 62 198Z" fill="url(#tare)"/>
+    <path d="M62 198 Q68 190 79 192 Q90 190 95 199 Q100 208 92 218 Q85 225 78 224 Q71 225 65 218 Q59 209 62 198Z" fill="url(#seseriShine)"/>
+  </g>
+
+  <!-- 串2 -->
+  <rect x="108" y="100" width="6" height="155" rx="3" fill="url(#skewer)" transform="rotate(-35 185 200)"/>
+  <g transform="rotate(-35 185 200)">
+    <path d="M92 126 Q98 118 109 120 Q120 118 125 127 Q130 136 122 146 Q115 153 108 152 Q101 153 95 146 Q89 137 92 126Z" fill="url(#seseri)"/>
+    <path d="M92 126 Q98 118 109 120 Q120 118 125 127 Q130 136 122 146 Q115 153 108 152 Q101 153 95 146 Q89 137 92 126Z" fill="url(#tare)"/>
+    <path d="M92 126 Q98 118 109 120 Q120 118 125 127 Q130 136 122 146 Q115 153 108 152 Q101 153 95 146 Q89 137 92 126Z" fill="url(#seseriShine)"/>
+    <line x1="93" y1="134" x2="125" y2="131" stroke="#3a1400" stroke-width="1.5" opacity="0.45"/>
+
+    <path d="M92 162 Q98 154 109 156 Q120 154 125 163 Q130 172 122 182 Q115 189 108 188 Q101 189 95 182 Q89 173 92 162Z" fill="url(#seseri)"/>
+    <path d="M92 162 Q98 154 109 156 Q120 154 125 163 Q130 172 122 182 Q115 189 108 188 Q101 189 95 182 Q89 173 92 162Z" fill="url(#tare)"/>
+    <path d="M92 162 Q98 154 109 156 Q120 154 125 163 Q130 172 122 182 Q115 189 108 188 Q101 189 95 182 Q89 173 92 162Z" fill="url(#seseriShine)"/>
+
+    <path d="M92 198 Q98 190 109 192 Q120 190 125 199 Q130 208 122 218 Q115 225 108 224 Q101 225 95 218 Q89 209 92 198Z" fill="url(#seseri)"/>
+    <path d="M92 198 Q98 190 109 192 Q120 190 125 199 Q130 208 122 218 Q115 225 108 224 Q101 225 95 218 Q89 209 92 198Z" fill="url(#tare)"/>
+    <path d="M92 198 Q98 190 109 192 Q120 190 125 199 Q130 208 122 218 Q115 225 108 224 Q101 225 95 218 Q89 209 92 198Z" fill="url(#seseriShine)"/>
+  </g>
+
+  <!-- 湯気 -->
+  <path d="M163 115 Q168 97 162 81" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M187 110 Q192 93 186 77" fill="none" stroke="rgba(255,255,255,0.11)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 希少部位テキスト -->
+  <text x="295" y="185" font-family="serif" font-size="10" fill="rgba(255,200,100,0.6)" text-anchor="middle" letter-spacing="1">希少部位</text>
+
+  <text x="200" y="275" font-family="serif" font-size="15" fill="rgba(255,220,150,0.85)" text-anchor="middle" letter-spacing="5">せ せ り</text>
+</svg>

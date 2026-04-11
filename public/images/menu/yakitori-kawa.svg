@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+    <linearGradient id="skewer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="50%" style="stop-color:#c8a850"/>
+      <stop offset="100%" style="stop-color:#a07830"/>
+    </linearGradient>
+    <linearGradient id="kawa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d89030"/>
+      <stop offset="40%" style="stop-color:#b06010"/>
+      <stop offset="100%" style="stop-color:#7a3808"/>
+    </linearGradient>
+    <linearGradient id="crispy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0a040;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#c07020;stop-opacity:0.3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#e08020;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="280" rx="180" ry="60" fill="#c84000" opacity="0.1" filter="url(#blur1)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+
+  <!-- 皿 -->
+  <ellipse cx="200" cy="238" rx="152" ry="28" fill="#2a1a0a" stroke="#3a2510" stroke-width="2"/>
+  <ellipse cx="200" cy="235" rx="147" ry="22" fill="#221408"/>
+
+  <!-- 串1 -->
+  <rect x="78" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 153 200)"/>
+  <g transform="rotate(-35 153 200)">
+    <!-- 鶏皮（ジャバラ状の薄い形） -->
+    <path d="M64 128 Q75 122 80 130 Q88 120 95 130 Q98 135 80 148 Q62 138 64 128Z" fill="url(#kawa)"/>
+    <path d="M64 128 Q75 122 80 130 Q88 120 95 130 Q98 135 80 148 Q62 138 64 128Z" fill="url(#crispy)"/>
+    <line x1="72" y1="128" x2="70" y2="144" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="80" y1="126" x2="79" y2="145" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="88" y1="127" x2="87" y2="143" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+
+    <path d="M64 158 Q75 152 80 160 Q88 150 95 160 Q98 165 80 178 Q62 168 64 158Z" fill="url(#kawa)"/>
+    <path d="M64 158 Q75 152 80 160 Q88 150 95 160 Q98 165 80 178 Q62 168 64 158Z" fill="url(#crispy)"/>
+    <line x1="72" y1="158" x2="70" y2="174" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="80" y1="156" x2="79" y2="175" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="88" y1="157" x2="87" y2="173" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+
+    <path d="M64 188 Q75 182 80 190 Q88 180 95 190 Q98 195 80 208 Q62 198 64 188Z" fill="url(#kawa)"/>
+    <path d="M64 188 Q75 182 80 190 Q88 180 95 190 Q98 195 80 208 Q62 198 64 188Z" fill="url(#crispy)"/>
+    <line x1="72" y1="188" x2="70" y2="204" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="80" y1="186" x2="79" y2="205" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- 串2 -->
+  <rect x="106" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 181 200)"/>
+  <g transform="rotate(-35 181 200)">
+    <path d="M92 128 Q103 122 108 130 Q116 120 123 130 Q126 135 108 148 Q90 138 92 128Z" fill="url(#kawa)"/>
+    <path d="M92 128 Q103 122 108 130 Q116 120 123 130 Q126 135 108 148 Q90 138 92 128Z" fill="url(#crispy)"/>
+    <line x1="100" y1="128" x2="98" y2="144" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="108" y1="126" x2="107" y2="145" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="116" y1="127" x2="115" y2="143" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+
+    <path d="M92 158 Q103 152 108 160 Q116 150 123 160 Q126 165 108 178 Q90 168 92 158Z" fill="url(#kawa)"/>
+    <path d="M92 158 Q103 152 108 160 Q116 150 123 160 Q126 165 108 178 Q90 168 92 158Z" fill="url(#crispy)"/>
+    <line x1="100" y1="158" x2="98" y2="174" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+    <line x1="108" y1="156" x2="107" y2="175" stroke="#5a2800" stroke-width="1" opacity="0.5"/>
+
+    <path d="M92 188 Q103 182 108 190 Q116 180 123 190 Q126 195 108 208 Q90 198 92 188Z" fill="url(#kawa)"/>
+    <path d="M92 188 Q103 182 108 190 Q116 180 123 190 Q126 195 108 208 Q90 198 92 188Z" fill="url(#crispy)"/>
+  </g>
+
+  <!-- 湯気 -->
+  <path d="M160 115 Q165 97 159 81" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M183 110 Q188 93 182 77" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="200" y="275" font-family="serif" font-size="15" fill="rgba(255,220,150,0.85)" text-anchor="middle" letter-spacing="8">皮</text>
+</svg>

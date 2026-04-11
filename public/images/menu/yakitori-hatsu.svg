@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+    <linearGradient id="skewer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="50%" style="stop-color:#c8a850"/>
+      <stop offset="100%" style="stop-color:#a07830"/>
+    </linearGradient>
+    <linearGradient id="hatsu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#983828"/>
+      <stop offset="40%" style="stop-color:#6a2018"/>
+      <stop offset="100%" style="stop-color:#4a1010"/>
+    </linearGradient>
+    <linearGradient id="hatsuGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d06050;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#a03020;stop-opacity:0.1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#c04020;stop-opacity:0.22"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="280" rx="180" ry="60" fill="#c84000" opacity="0.1" filter="url(#blur1)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+
+  <!-- 皿 -->
+  <ellipse cx="200" cy="238" rx="152" ry="28" fill="#2a1a0a" stroke="#3a2510" stroke-width="2"/>
+  <ellipse cx="200" cy="235" rx="147" ry="22" fill="#221408"/>
+
+  <!-- 串1 -->
+  <rect x="78" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 153 200)"/>
+  <g transform="rotate(-35 153 200)">
+    <!-- ハツ（ハート型の断面風） -->
+    <path d="M78 118 Q70 112 65 118 Q60 124 65 132 Q70 140 78 148 Q86 140 91 132 Q96 124 91 118 Q86 112 78 118Z" fill="url(#hatsu)"/>
+    <path d="M78 118 Q70 112 65 118 Q60 124 65 132 Q70 140 78 148 Q86 140 91 132 Q96 124 91 118 Q86 112 78 118Z" fill="url(#hatsuGlow)"/>
+    <!-- 中の穴（血管） -->
+    <circle cx="71" cy="124" r="4" fill="#3a1010" opacity="0.8"/>
+    <circle cx="85" cy="124" r="4" fill="#3a1010" opacity="0.8"/>
+    <line x1="65" y1="130" x2="91" y2="128" stroke="#3a1010" stroke-width="1.5" opacity="0.4"/>
+
+    <path d="M78 154 Q70 148 65 154 Q60 160 65 168 Q70 176 78 184 Q86 176 91 168 Q96 160 91 154 Q86 148 78 154Z" fill="url(#hatsu)"/>
+    <path d="M78 154 Q70 148 65 154 Q60 160 65 168 Q70 176 78 184 Q86 176 91 168 Q96 160 91 154 Q86 148 78 154Z" fill="url(#hatsuGlow)"/>
+    <circle cx="71" cy="160" r="4" fill="#3a1010" opacity="0.8"/>
+    <circle cx="85" cy="160" r="4" fill="#3a1010" opacity="0.8"/>
+
+    <path d="M78 190 Q70 184 65 190 Q60 196 65 204 Q70 212 78 220 Q86 212 91 204 Q96 196 91 190 Q86 184 78 190Z" fill="url(#hatsu)"/>
+    <path d="M78 190 Q70 184 65 190 Q60 196 65 204 Q70 212 78 220 Q86 212 91 204 Q96 196 91 190 Q86 184 78 190Z" fill="url(#hatsuGlow)"/>
+    <circle cx="71" cy="196" r="4" fill="#3a1010" opacity="0.8"/>
+    <circle cx="85" cy="196" r="4" fill="#3a1010" opacity="0.8"/>
+  </g>
+
+  <!-- 串2 -->
+  <rect x="106" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 181 200)"/>
+  <g transform="rotate(-35 181 200)">
+    <path d="M106 118 Q98 112 93 118 Q88 124 93 132 Q98 140 106 148 Q114 140 119 132 Q124 124 119 118 Q114 112 106 118Z" fill="url(#hatsu)"/>
+    <path d="M106 118 Q98 112 93 118 Q88 124 93 132 Q98 140 106 148 Q114 140 119 132 Q124 124 119 118 Q114 112 106 118Z" fill="url(#hatsuGlow)"/>
+    <circle cx="99" cy="124" r="4" fill="#3a1010" opacity="0.8"/>
+    <circle cx="113" cy="124" r="4" fill="#3a1010" opacity="0.8"/>
+
+    <path d="M106 154 Q98 148 93 154 Q88 160 93 168 Q98 176 106 184 Q114 176 119 168 Q124 160 119 154 Q114 148 106 154Z" fill="url(#hatsu)"/>
+    <path d="M106 154 Q98 148 93 154 Q88 160 93 168 Q98 176 106 184 Q114 176 119 168 Q124 160 119 154 Q114 148 106 154Z" fill="url(#hatsuGlow)"/>
+    <circle cx="99" cy="160" r="4" fill="#3a1010" opacity="0.8"/>
+    <circle cx="113" cy="160" r="4" fill="#3a1010" opacity="0.8"/>
+
+    <path d="M106 190 Q98 184 93 190 Q88 196 93 204 Q98 212 106 220 Q114 212 119 204 Q124 196 119 190 Q114 184 106 190Z" fill="url(#hatsu)"/>
+    <path d="M106 190 Q98 184 93 190 Q88 196 93 204 Q98 212 106 220 Q114 212 119 204 Q124 196 119 190 Q114 184 106 190Z" fill="url(#hatsuGlow)"/>
+  </g>
+
+  <!-- 湯気 -->
+  <path d="M160 115 Q165 97 159 81" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M183 110 Q188 93 182 77" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="200" y="275" font-family="serif" font-size="15" fill="rgba(255,220,150,0.85)" text-anchor="middle" letter-spacing="8">ハ ツ</text>
+</svg>

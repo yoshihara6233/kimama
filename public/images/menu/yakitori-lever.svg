@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+    <linearGradient id="skewer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="50%" style="stop-color:#c8a850"/>
+      <stop offset="100%" style="stop-color:#a07830"/>
+    </linearGradient>
+    <linearGradient id="lever" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a3020"/>
+      <stop offset="40%" style="stop-color:#521810"/>
+      <stop offset="100%" style="stop-color:#380c08"/>
+    </linearGradient>
+    <linearGradient id="leverSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a84030;stop-opacity:0.45"/>
+      <stop offset="100%" style="stop-color:#701808;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="tare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#200800;stop-opacity:0.65"/>
+      <stop offset="100%" style="stop-color:#050100;stop-opacity:0.45"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#a03020;stop-opacity:0.22"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="280" rx="180" ry="60" fill="#c84000" opacity="0.1" filter="url(#blur1)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+
+  <!-- 皿 -->
+  <ellipse cx="200" cy="238" rx="152" ry="28" fill="#2a1a0a" stroke="#3a2510" stroke-width="2"/>
+  <ellipse cx="200" cy="235" rx="147" ry="22" fill="#221408"/>
+
+  <!-- 生姜（右端に添えて） -->
+  <path d="M275 205 Q280 198 288 200 Q296 198 300 205 Q302 212 295 218 Q288 222 281 218 Q274 212 275 205Z" fill="#f0e080" stroke="#c0b040" stroke-width="1" opacity="0.85"/>
+  <line x1="276" y1="210" x2="300" y2="208" stroke="#a09030" stroke-width="0.8" opacity="0.7"/>
+  <line x1="277" y1="215" x2="299" y2="213" stroke="#a09030" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- 串1 -->
+  <rect x="78" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 153 200)"/>
+  <g transform="rotate(-35 153 200)">
+    <!-- レバー（なめらかな塊） -->
+    <path d="M60 124 Q66 115 78 117 Q90 115 96 124 Q101 133 96 144 Q90 152 78 153 Q66 152 60 144 Q55 135 60 124Z" fill="url(#lever)"/>
+    <path d="M60 124 Q66 115 78 117 Q90 115 96 124 Q101 133 96 144 Q90 152 78 153 Q66 152 60 144 Q55 135 60 124Z" fill="url(#tare)"/>
+    <path d="M60 124 Q66 115 78 117 Q90 115 96 124 Q101 133 96 144 Q90 152 78 153 Q66 152 60 144 Q55 135 60 124Z" fill="url(#leverSurface)"/>
+    <!-- とろっとした表面 -->
+    <ellipse cx="72" cy="128" rx="8" ry="5" fill="#c05040" opacity="0.3" transform="rotate(-10 72 128)"/>
+    <line x1="61" y1="135" x2="96" y2="133" stroke="#200800" stroke-width="1.5" opacity="0.4"/>
+
+    <path d="M60 160 Q66 151 78 153 Q90 151 96 160 Q101 169 96 180 Q90 188 78 189 Q66 188 60 180 Q55 171 60 160Z" fill="url(#lever)"/>
+    <path d="M60 160 Q66 151 78 153 Q90 151 96 160 Q101 169 96 180 Q90 188 78 189 Q66 188 60 180 Q55 171 60 160Z" fill="url(#tare)"/>
+    <path d="M60 160 Q66 151 78 153 Q90 151 96 160 Q101 169 96 180 Q90 188 78 189 Q66 188 60 180 Q55 171 60 160Z" fill="url(#leverSurface)"/>
+    <ellipse cx="72" cy="164" rx="8" ry="5" fill="#c05040" opacity="0.3" transform="rotate(-10 72 164)"/>
+
+    <path d="M60 196 Q66 187 78 189 Q90 187 96 196 Q101 205 96 216 Q90 224 78 225 Q66 224 60 216 Q55 207 60 196Z" fill="url(#lever)"/>
+    <path d="M60 196 Q66 187 78 189 Q90 187 96 196 Q101 205 96 216 Q90 224 78 225 Q66 224 60 216 Q55 207 60 196Z" fill="url(#tare)"/>
+    <path d="M60 196 Q66 187 78 189 Q90 187 96 196 Q101 205 96 216 Q90 224 78 225 Q66 224 60 216 Q55 207 60 196Z" fill="url(#leverSurface)"/>
+  </g>
+
+  <!-- 串2 -->
+  <rect x="106" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 181 200)"/>
+  <g transform="rotate(-35 181 200)">
+    <path d="M88 124 Q94 115 106 117 Q118 115 124 124 Q129 133 124 144 Q118 152 106 153 Q94 152 88 144 Q83 135 88 124Z" fill="url(#lever)"/>
+    <path d="M88 124 Q94 115 106 117 Q118 115 124 124 Q129 133 124 144 Q118 152 106 153 Q94 152 88 144 Q83 135 88 124Z" fill="url(#tare)"/>
+    <path d="M88 124 Q94 115 106 117 Q118 115 124 124 Q129 133 124 144 Q118 152 106 153 Q94 152 88 144 Q83 135 88 124Z" fill="url(#leverSurface)"/>
+    <ellipse cx="100" cy="128" rx="8" ry="5" fill="#c05040" opacity="0.3" transform="rotate(-10 100 128)"/>
+
+    <path d="M88 160 Q94 151 106 153 Q118 151 124 160 Q129 169 124 180 Q118 188 106 189 Q94 188 88 180 Q83 171 88 160Z" fill="url(#lever)"/>
+    <path d="M88 160 Q94 151 106 153 Q118 151 124 160 Q129 169 124 180 Q118 188 106 189 Q94 188 88 180 Q83 171 88 160Z" fill="url(#tare)"/>
+    <path d="M88 160 Q94 151 106 153 Q118 151 124 160 Q129 169 124 180 Q118 188 106 189 Q94 188 88 180 Q83 171 88 160Z" fill="url(#leverSurface)"/>
+
+    <path d="M88 196 Q94 187 106 189 Q118 187 124 196 Q129 205 124 216 Q118 224 106 225 Q94 224 88 216 Q83 207 88 196Z" fill="url(#lever)"/>
+    <path d="M88 196 Q94 187 106 189 Q118 187 124 196 Q129 205 124 216 Q118 224 106 225 Q94 224 88 216 Q83 207 88 196Z" fill="url(#tare)"/>
+    <path d="M88 196 Q94 187 106 189 Q118 187 124 196 Q129 205 124 216 Q118 224 106 225 Q94 224 88 216 Q83 207 88 196Z" fill="url(#leverSurface)"/>
+  </g>
+
+  <!-- 湯気 -->
+  <path d="M160 115 Q165 97 159 81" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M183 110 Q188 93 182 77" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="200" y="275" font-family="serif" font-size="15" fill="rgba(255,220,150,0.85)" text-anchor="middle" letter-spacing="5">レ バ ー</text>
+</svg>

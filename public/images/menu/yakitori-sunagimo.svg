@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+    <linearGradient id="skewer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="50%" style="stop-color:#c8a850"/>
+      <stop offset="100%" style="stop-color:#a07830"/>
+    </linearGradient>
+    <linearGradient id="gizzard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a86858"/>
+      <stop offset="40%" style="stop-color:#7a4038"/>
+      <stop offset="100%" style="stop-color:#502520"/>
+    </linearGradient>
+    <linearGradient id="gizzardLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c87860;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#a05040;stop-opacity:0.2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#c06030;stop-opacity:0.22"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="280" rx="180" ry="60" fill="#c84000" opacity="0.1" filter="url(#blur1)"/>
+  <rect width="400" height="300" fill="url(#glow)"/>
+
+  <!-- 皿 -->
+  <ellipse cx="200" cy="238" rx="152" ry="28" fill="#2a1a0a" stroke="#3a2510" stroke-width="2"/>
+  <ellipse cx="200" cy="235" rx="147" ry="22" fill="#221408"/>
+
+  <!-- レモン -->
+  <ellipse cx="285" cy="212" rx="20" ry="14" fill="#e8d020" stroke="#c0a800" stroke-width="1.5" opacity="0.9"/>
+  <line x1="285" y1="198" x2="285" y2="226" stroke="#c0a800" stroke-width="0.8" opacity="0.7"/>
+  <line x1="265" y1="212" x2="305" y2="212" stroke="#c0a800" stroke-width="0.8" opacity="0.7"/>
+  <circle cx="285" cy="212" r="6" fill="#f0e040" stroke="#c0a800" stroke-width="0.8" opacity="0.8"/>
+
+  <!-- 串1 -->
+  <rect x="78" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 153 200)"/>
+  <g transform="rotate(-35 153 200)">
+    <!-- 砂肝（独特の形：二つ並んだ形） -->
+    <path d="M64 125 Q70 118 78 120 Q86 118 92 125 Q96 132 88 142 Q84 148 78 148 Q72 148 68 142 Q62 135 64 125Z" fill="url(#gizzard)"/>
+    <path d="M64 125 Q70 118 78 120 Q86 118 92 125 Q96 132 88 142 Q84 148 78 148 Q72 148 68 142 Q62 135 64 125Z" fill="url(#gizzardLight)"/>
+    <!-- 中央の白い筋 -->
+    <path d="M73 122 Q78 130 73 142" fill="none" stroke="rgba(255,220,200,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="65" y1="130" x2="92" y2="128" stroke="#3a1808" stroke-width="1" opacity="0.5"/>
+
+    <path d="M64 160 Q70 153 78 155 Q86 153 92 160 Q96 167 88 177 Q84 183 78 183 Q72 183 68 177 Q62 170 64 160Z" fill="url(#gizzard)"/>
+    <path d="M64 160 Q70 153 78 155 Q86 153 92 160 Q96 167 88 177 Q84 183 78 183 Q72 183 68 177 Q62 170 64 160Z" fill="url(#gizzardLight)"/>
+    <path d="M73 157 Q78 165 73 177" fill="none" stroke="rgba(255,220,200,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M64 195 Q70 188 78 190 Q86 188 92 195 Q96 202 88 212 Q84 218 78 218 Q72 218 68 212 Q62 205 64 195Z" fill="url(#gizzard)"/>
+    <path d="M64 195 Q70 188 78 190 Q86 188 92 195 Q96 202 88 212 Q84 218 78 218 Q72 218 68 212 Q62 205 64 195Z" fill="url(#gizzardLight)"/>
+    <path d="M73 192 Q78 200 73 212" fill="none" stroke="rgba(255,220,200,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 串2 -->
+  <rect x="106" y="100" width="5" height="155" rx="2.5" fill="url(#skewer)" transform="rotate(-35 181 200)"/>
+  <g transform="rotate(-35 181 200)">
+    <path d="M92 125 Q98 118 106 120 Q114 118 120 125 Q124 132 116 142 Q112 148 106 148 Q100 148 96 142 Q90 135 92 125Z" fill="url(#gizzard)"/>
+    <path d="M92 125 Q98 118 106 120 Q114 118 120 125 Q124 132 116 142 Q112 148 106 148 Q100 148 96 142 Q90 135 92 125Z" fill="url(#gizzardLight)"/>
+    <path d="M101 122 Q106 130 101 142" fill="none" stroke="rgba(255,220,200,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M92 160 Q98 153 106 155 Q114 153 120 160 Q124 167 116 177 Q112 183 106 183 Q100 183 96 177 Q90 170 92 160Z" fill="url(#gizzard)"/>
+    <path d="M92 160 Q98 153 106 155 Q114 153 120 160 Q124 167 116 177 Q112 183 106 183 Q100 183 96 177 Q90 170 92 160Z" fill="url(#gizzardLight)"/>
+    <path d="M101 157 Q106 165 101 177" fill="none" stroke="rgba(255,220,200,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M92 195 Q98 188 106 190 Q114 188 120 195 Q124 202 116 212 Q112 218 106 218 Q100 218 96 212 Q90 205 92 195Z" fill="url(#gizzard)"/>
+    <path d="M92 195 Q98 188 106 190 Q114 188 120 195 Q124 202 116 212 Q112 218 106 218 Q100 218 96 212 Q90 205 92 195Z" fill="url(#gizzardLight)"/>
+  </g>
+
+  <!-- 湯気 -->
+  <path d="M160 115 Q165 97 159 81" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M183 110 Q188 93 182 77" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="200" y="275" font-family="serif" font-size="15" fill="rgba(255,220,150,0.85)" text-anchor="middle" letter-spacing="5">砂　肝</text>
+</svg>

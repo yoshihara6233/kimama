@@ -31,6 +31,7 @@ export const menuItems: MenuItem[] = [
     unit: "本",
     category: "yakitori",
     isRecommended: true,
+    image: "/images/menu/yakitori-momo.svg",
   },
   {
     id: "y02",
@@ -41,6 +42,7 @@ export const menuItems: MenuItem[] = [
     unit: "本",
     category: "yakitori",
     isRecommended: true,
+    image: "/images/menu/yakitori-negima.svg",
   },
   {
     id: "y03",
@@ -51,6 +53,7 @@ export const menuItems: MenuItem[] = [
     unit: "本",
     category: "yakitori",
     isRecommended: true,
+    image: "/images/menu/yakitori-tsukune.svg",
   },
   {
     id: "y04",
@@ -60,6 +63,7 @@ export const menuItems: MenuItem[] = [
     price: 160,
     unit: "本",
     category: "yakitori",
+    image: "/images/menu/yakitori-kawa.svg",
   },
   {
     id: "y05",
@@ -69,6 +73,7 @@ export const menuItems: MenuItem[] = [
     price: 170,
     unit: "本",
     category: "yakitori",
+    image: "/images/menu/yakitori-sunagimo.svg",
   },
   {
     id: "y06",
@@ -78,6 +83,7 @@ export const menuItems: MenuItem[] = [
     price: 170,
     unit: "本",
     category: "yakitori",
+    image: "/images/menu/yakitori-hatsu.svg",
   },
   {
     id: "y07",
@@ -88,6 +94,7 @@ export const menuItems: MenuItem[] = [
     unit: "本",
     category: "yakitori",
     isRecommended: true,
+    image: "/images/menu/yakitori-seseri.svg",
   },
   {
     id: "y08",
@@ -97,6 +104,7 @@ export const menuItems: MenuItem[] = [
     price: 180,
     unit: "本",
     category: "yakitori",
+    image: "/images/menu/yakitori-lever.svg",
   },
   // 鳥料理
   {
