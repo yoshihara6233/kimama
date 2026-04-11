@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#2a4a6a"/>
+    </linearGradient>
+    <linearGradient id="drinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8c0;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#d4b870;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="glassStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.5)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.2)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- グラス本体（ハイボールグラス） -->
+  <path d="M158 75 L162 240 L238 240 L242 75 Z" fill="url(#drinkGrad)"/>
+
+  <!-- 氷のキューブ -->
+  <rect x="170" y="130" width="28" height="28" rx="3" fill="rgba(255,255,255,0.7)" stroke="rgba(255,255,255,0.9)" stroke-width="1"/>
+  <line x1="170" y1="143" x2="198" y2="143" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <line x1="184" y1="130" x2="184" y2="158" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+
+  <rect x="202" y="155" width="26" height="26" rx="3" fill="rgba(255,255,255,0.65)" stroke="rgba(255,255,255,0.9)" stroke-width="1"/>
+  <line x1="202" y1="168" x2="228" y2="168" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <line x1="215" y1="155" x2="215" y2="181" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+
+  <rect x="165" y="175" width="24" height="24" rx="3" fill="rgba(255,255,255,0.6)" stroke="rgba(255,255,255,0.85)" stroke-width="1"/>
+
+  <!-- 炭酸の泡 -->
+  <circle cx="178" cy="120" r="2" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="195" cy="105" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="212" cy="115" r="2" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="225" cy="95" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="188" cy="90" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="220" cy="140" r="1.5" fill="rgba(255,255,255,0.5)"/>
+
+  <!-- グラスのアウトライン -->
+  <path d="M158 75 L162 240 L238 240 L242 75 Z" fill="none" stroke="url(#glassStroke)" stroke-width="2"/>
+
+  <!-- 光沢 -->
+  <path d="M163 85 L166 230" stroke="rgba(255,255,255,0.3)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- レモンスライス -->
+  <circle cx="230" cy="80" r="18" fill="#f5d020" stroke="#e8b800" stroke-width="1.5"/>
+  <line x1="230" y1="62" x2="230" y2="98" stroke="#e8b800" stroke-width="1"/>
+  <line x1="212" y1="80" x2="248" y2="80" stroke="#e8b800" stroke-width="1"/>
+  <line x1="217" y1="67" x2="243" y2="93" stroke="#e8b800" stroke-width="0.8"/>
+  <line x1="243" y1="67" x2="217" y2="93" stroke="#e8b800" stroke-width="0.8"/>
+  <circle cx="230" cy="80" r="7" fill="#f5e060" stroke="#e8b800" stroke-width="0.8"/>
+
+  <!-- テキスト -->
+  <text x="200" y="270" font-family="serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing="4">ハイボール</text>
+</svg>

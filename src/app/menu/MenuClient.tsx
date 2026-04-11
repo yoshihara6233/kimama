@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { menuItems, MENU_CATEGORIES, type MenuCategory } from "@/data/menu";
 
@@ -67,13 +68,22 @@ export function MenuClient() {
                 >
                   <div
                     className="h-32 relative overflow-hidden"
-                    style={{ background: categoryColors[item.category] }}
+                    style={{ background: item.image ? undefined : categoryColors[item.category] }}
                   >
-                    <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity">
-                      <span className="font-serif text-5xl text-white">串</span>
-                    </div>
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity">
+                        <span className="font-serif text-5xl text-white">串</span>
+                      </div>
+                    )}
                     {item.isRecommended && (
-                      <span className="absolute top-2 left-2 bg-[var(--accent)] text-white text-[10px] px-2 py-0.5 rounded-full tracking-wide">
+                      <span className="absolute top-2 left-2 bg-[var(--accent)] text-white text-[10px] px-2 py-0.5 rounded-full tracking-wide z-10">
                         おすすめ
                       </span>
                     )}

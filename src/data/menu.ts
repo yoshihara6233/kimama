@@ -171,6 +171,7 @@ export const menuItems: MenuItem[] = [
     description: "キンキンに冷えた生ビール。",
     price: 600,
     category: "drink",
+    image: "/images/menu/drink-beer.svg",
   },
   {
     id: "d02",
@@ -179,6 +180,7 @@ export const menuItems: MenuItem[] = [
     description: "国産ウイスキーのすっきりハイボール。",
     price: 480,
     category: "drink",
+    image: "/images/menu/drink-highball.svg",
   },
   {
     id: "d03",
@@ -187,6 +189,7 @@ export const menuItems: MenuItem[] = [
     description: "自家製梅酒をソーダで割った一杯。",
     price: 520,
     category: "drink",
+    image: "/images/menu/drink-umeshu.svg",
   },
   {
     id: "d04",
@@ -195,5 +198,6 @@ export const menuItems: MenuItem[] = [
     description: "ウーロン茶・コーラ・オレンジジュースなど。",
     price: 300,
     category: "drink",
+    image: "/images/menu/drink-soft.svg",
   },
 ];

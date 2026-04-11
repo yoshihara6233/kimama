@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#2a4a6a"/>
+    </linearGradient>
+    <linearGradient id="umeshuGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e85d8a;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#c0304a;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="plumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8406a"/>
+      <stop offset="100%" style="stop-color:#a02040"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- グラス（ワイングラス風） -->
+  <!-- ステム -->
+  <rect x="196" y="210" width="8" height="30" fill="rgba(255,255,255,0.3)"/>
+  <!-- ベース -->
+  <ellipse cx="200" cy="240" rx="30" ry="6" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+
+  <!-- ボウル部分（ワイングラス） -->
+  <path d="M155 75 Q148 150 165 195 Q178 215 200 215 Q222 215 235 195 Q252 150 245 75 Z" fill="url(#umeshuGrad)"/>
+  <path d="M155 75 Q148 150 165 195 Q178 215 200 215 Q222 215 235 195 Q252 150 245 75 Z" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+
+  <!-- 梅の実 -->
+  <circle cx="185" cy="170" r="16" fill="url(#plumGrad)" stroke="#ff6090" stroke-width="1.5"/>
+  <path d="M185 154 Q190 158 185 164 Q180 158 185 154" fill="#ff8080" opacity="0.6"/>
+  <!-- 梅のへた -->
+  <path d="M185 153 Q187 149 189 152" fill="none" stroke="#5a2020" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 梅の実2（小） -->
+  <circle cx="213" cy="185" r="10" fill="url(#plumGrad)" stroke="#ff6090" stroke-width="1" opacity="0.85"/>
+
+  <!-- 炭酸の泡 -->
+  <circle cx="170" cy="120" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="200" cy="100" r="2.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="225" cy="115" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="183" cy="108" r="1.5" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="215" cy="95" r="1.5" fill="rgba(255,255,255,0.5)"/>
+
+  <!-- 光沢 -->
+  <path d="M163 85 Q160 140 167 185" stroke="rgba(255,255,255,0.3)" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- ミント葉 -->
+  <path d="M228 78 Q240 65 248 72 Q242 85 228 78 Z" fill="#4a9a4a" stroke="#2d6a2d" stroke-width="0.8"/>
+  <path d="M228 78 Q238 68 245 68" fill="none" stroke="#2d6a2d" stroke-width="0.8"/>
+
+  <!-- テキスト -->
+  <text x="200" y="270" font-family="serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing="4">梅酒ソーダ</text>
+</svg>

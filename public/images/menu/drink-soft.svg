@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#2a4a6a"/>
+    </linearGradient>
+    <!-- ウーロン茶グラス -->
+    <linearGradient id="oolongGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5E3C;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#4a2a10;stop-opacity:0.9"/>
+    </linearGradient>
+    <!-- コーラグラス -->
+    <linearGradient id="colaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a1a0a;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#1a0800;stop-opacity:0.95"/>
+    </linearGradient>
+    <!-- オレンジグラス -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9020;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#e05800;stop-opacity:0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- ウーロン茶グラス（左） -->
+  <path d="M72 90 L76 220 L122 220 L126 90 Z" fill="url(#oolongGrad)"/>
+  <path d="M72 90 L76 220 L122 220 L126 90 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- 氷 -->
+  <rect x="80" y="160" width="16" height="16" rx="2" fill="rgba(255,255,255,0.55)" stroke="rgba(255,255,255,0.7)" stroke-width="0.8"/>
+  <rect x="100" y="175" width="14" height="14" rx="2" fill="rgba(255,255,255,0.5)" stroke="rgba(255,255,255,0.7)" stroke-width="0.8"/>
+  <!-- 光沢 -->
+  <path d="M77 100 L79 210" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-linecap="round"/>
+  <!-- ラベル -->
+  <text x="99" y="235" font-family="serif" font-size="9" fill="rgba(255,255,255,0.55)" text-anchor="middle">ウーロン茶</text>
+
+  <!-- コーラグラス（中央） -->
+  <path d="M172 85 L176 225 L224 225 L228 85 Z" fill="url(#colaGrad)"/>
+  <path d="M172 85 L176 225 L224 225 L228 85 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- 泡 -->
+  <ellipse cx="200" cy="88" rx="24" ry="8" fill="rgba(80,30,10,0.9)"/>
+  <circle cx="188" cy="84" r="5" fill="rgba(60,20,5,0.95)"/>
+  <circle cx="200" cy="80" r="6" fill="rgba(50,15,5,0.95)"/>
+  <circle cx="212" cy="84" r="5" fill="rgba(60,20,5,0.95)"/>
+  <!-- 炭酸泡 -->
+  <circle cx="185" cy="130" r="1.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="200" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="215" cy="125" r="1.5" fill="rgba(255,255,255,0.4)"/>
+  <!-- 氷 -->
+  <rect x="180" y="170" width="18" height="18" rx="2" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.5)" stroke-width="0.8"/>
+  <rect x="204" y="180" width="15" height="15" rx="2" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.5)" stroke-width="0.8"/>
+  <!-- 光沢 -->
+  <path d="M177 95 L179 215" stroke="rgba(255,255,255,0.2)" stroke-width="3" stroke-linecap="round"/>
+  <!-- ラベル -->
+  <text x="200" y="242" font-family="serif" font-size="9" fill="rgba(255,255,255,0.55)" text-anchor="middle">コーラ</text>
+
+  <!-- オレンジジュースグラス（右） -->
+  <path d="M274 90 L278 220 L324 220 L328 90 Z" fill="url(#orangeGrad)"/>
+  <path d="M274 90 L278 220 L324 220 L328 90 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- オレンジスライス -->
+  <circle cx="301" cy="95" r="16" fill="#ff9020" stroke="#e06000" stroke-width="1.5"/>
+  <line x1="301" y1="79" x2="301" y2="111" stroke="#e06000" stroke-width="0.8"/>
+  <line x1="285" y1="95" x2="317" y2="95" stroke="#e06000" stroke-width="0.8"/>
+  <line x1="290" y1="83" x2="312" y2="107" stroke="#e06000" stroke-width="0.7"/>
+  <line x1="312" y1="83" x2="290" y2="107" stroke="#e06000" stroke-width="0.7"/>
+  <circle cx="301" cy="95" r="6" fill="#ffb040" stroke="#e06000" stroke-width="0.8"/>
+  <!-- 氷 -->
+  <rect x="282" y="160" width="15" height="15" rx="2" fill="rgba(255,255,255,0.45)" stroke="rgba(255,255,255,0.7)" stroke-width="0.8"/>
+  <rect x="302" y="175" width="14" height="14" rx="2" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.7)" stroke-width="0.8"/>
+  <!-- 光沢 -->
+  <path d="M279 100 L281 210" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-linecap="round"/>
+  <!-- ラベル -->
+  <text x="301" y="235" font-family="serif" font-size="9" fill="rgba(255,255,255,0.55)" text-anchor="middle">オレンジ</text>
+
+  <!-- タイトル -->
+  <text x="200" y="272" font-family="serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle" letter-spacing="4">ソフトドリンク</text>
+</svg>
